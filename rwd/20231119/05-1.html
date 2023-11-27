@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col{
+            height: 200px;
+            background-color: #f00;
+            margin: 15px;
+            --flex-column:1;
+            width: calc(100%/var(--flex-column) - 15px*2);
+        }
+        @media screen and (min-width:768px) {
+            .warp{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .col{
+                --flex-column: 3;
+            }
+        }
+        @media screen and (min-width:1024px) {
+            .col{
+                --flex-column: 4;
+            }
+        }
+        @media screen and (min-width:1200px) {
+            .col{
+                --flex-column: 5;
+            }
+        }
+        @media screen and (min-width:1400px) {
+            .col{
+                --flex-column: 6;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</body>
+</html>

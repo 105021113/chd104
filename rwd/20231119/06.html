@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .warp{
+            --size: 200px;
+        }
+        .box{
+            --size: 400px;/* -- */
+            width: var(--size,100px);
+            height: var(--size,100px);/* 後面為預設值 */
+            background-color: #0f0;
+        }
+        .box2{
+            width: var(--size,100px);
+            height: var(--size,100px);/* 後面為預設值 */
+            background-color: #f0a;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

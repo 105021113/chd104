@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            background-color: #fa0;
+            padding: 30px;
+        }
+        .box .text {
+            background-color: #ccc;
+            padding: 20px;
+            font-size: 32px;
+        } */
+
+        .box {
+            background-color: #fa0;
+            padding: 30px;
+
+            .text {
+                background-color: #ccc;
+                padding: 20px;
+                font-size: 32px;
+
+                @media (width >= 768px) {
+                    background-color: #f00;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="text">
+            box text
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

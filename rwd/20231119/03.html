@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: #f00;
+        }
+        @media screen and (min-width:768px) {
+            .box{
+                background-color: #00f;
+            }
+        }
+        /* @media 裝置類型 and (條件一) and (條件二){
+            符合上面規則時會執  行的css
+        } */
+    </style>   
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

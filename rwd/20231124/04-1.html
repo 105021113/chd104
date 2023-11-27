@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-nav{
+            background-color: #fa0;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-menu input{
+            display: none;
+        }
+        .sub-menu{
+            max-height: 0;
+            overflow: hidden;
+            width: 100%;
+            background-color: #f00;
+            box-shadow: 0px 8px 8px #0003 inset,
+                        0px -8px 8px #0003 inset;
+            transition: max-height 1s;
+        }
+        .sub-menu li{
+            padding-left: 1em;
+        }
+        .main-menu input[type="checkbox"]:checked ~ .sub-menu{
+            max-height: 100vh;
+        }
+        .main-nav ul.main-menu li{
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #fff;
+            flex-wrap: wrap;
+        }
+        .main-nav ul.main-menu li a{
+            text-decoration: none;
+            display: block;
+            padding: 8px 10px;
+            color: #fff;
+            box-sizing: border-box;
+            width: calc(100% - 30px);
+            
+        }
+        .main-nav ul.main-menu li .icon{
+            width: 30px;
+            height: 30px;
+            /* background-color: #f00; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="main-menu">
+            <li><a href="">link</a></li>
+            <li>
+                <a href="">link</a>
+                <input type="checkbox" id="subswitch2">
+                <label for="subswitch2" class="icon">▶</label>
+                <ul class="sub-menu">
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">link</a>
+                <input type="checkbox" id="subswitch3">
+                <label for="subswitch3" class="icon">▶</label>
+                <ul class="sub-menu">
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                    <li><a href="">sublink</a></li>
+                </ul>
+            </li>
+            <li><a href="">link</a></li>
+            <li><a href="">link</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

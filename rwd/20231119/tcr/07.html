@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            --column-count: 1;
+            max-width: 1440px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+        .wrap .col{
+            width: calc(100% / var(--column-count));
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .card{
+            height: 100px;
+            background-color: #fa0;
+        }
+        @media (min-width:768px) {
+            .wrap .col {
+                --column-count: 3;
+            }
+        }
+        @media (min-width:1024px) {
+            .wrap .col {
+                --column-count: 4;
+            }
+        }
+        @media (min-width:1200px) {
+            .wrap .col {
+                --column-count: 5;
+            }
+        }
+        @media (min-width:1440px) {
+            .wrap .col {
+                --column-count: 6;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+        <div class="col">
+            <div class="card"></div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

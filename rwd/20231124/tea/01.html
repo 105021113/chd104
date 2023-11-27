@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-header {
+            background-color: #aaa;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .logo img {
+            display: block;
+        }
+        .hb {
+            width: 40px;
+            height: 40px;
+            background-color: #f00;
+        }
+        .main-nav {
+            width: 100%;
+            background-color: #fa0;
+        }
+        
+        .main-nav a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .main-nav a + a {
+            border-top: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-header">
+        <!-- -------------------------------- -->
+        <div class="logo">
+            <a href="#">
+                <img src="https://fakeimg.pl/80x40/200">
+            </a>
+        </div>
+        <!-- -------------------------------- -->
+        <div class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- -------------------------------- -->
+        <nav class="main-nav">
+            <a href="javascript:;">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+        <!-- -------------------------------- -->
+    </div>
+
+
+    
+</body>
+</html>
