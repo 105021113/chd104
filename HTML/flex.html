@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 500px;
+            height: 500px;
+            border: 2px red solid;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: start;
+            /*align-content: stretch;
+            align-content: end;
+            align-content: space-between; */
+            /* align-content: space-evenly;
+            align-content: space-around; */
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+        .box {
+            background-color: yellow;
+            width: 130px;
+            height: 130px;
+            margin: 2px;
+            font-size: 20px;
+        }
+        .box:first-child{
+            height: 200px;
+        }
+        .box:last-child{
+            height: 150px;
+        }
+    </style>
+<!-- align-content:控制彈性列在父層空間中交叉軸的對齊&分布 
+     align-items:控制子物件在彈性列中交叉軸的對齊
+     justify-content:控制子物件在父層空間中主軸的對齊&分布
+-->
+
+</head>
+<body>
+    <div class = "wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>

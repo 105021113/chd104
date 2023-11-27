@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<style>
+	h2{
+		color:deeppink;
+	}
+</style>
+</head>
+
+<body>
+<h2>句型</h2>
+<script>
+	for(let i=1; i<=3; i++){
+		document.write( "I love JavaScript~<br>");
+	}
+</script> 
+
+
+<h2>練習一:印出  1、2、3、...8、9、10</h2>
+<script>
+	for(var i=1; i<=10; i++){
+		document.write(i);
+		if(i<10){
+			document.write("、");
+		}
+		
+	}
+</script> 
+ 
+
+<h2>練習二:請問: 1加到10的總和為多少? </h2>
+<script>
+	var sum = 0;
+	for(let i=1; i<=10; i++){
+		sum += i;
+	}
+	document.write(sum);
+</script>
+
+<h2>練習三:請印出1到50間3的倍數及其總和 </h2>
+<script>
+	var sum = 0;
+	for(let i=1; i<=50; i++){
+		if(i%3==0){
+			document.write(i, " ");
+			sum += i;
+		}
+	}
+	document.write("<br>總和 : ", sum, "<br>");
+</script>
+<script>
+	var sum = 0;
+	for(let i=3; i<=50; i+=3){
+		document.write(i, " ");
+		sum += i;
+	}
+	document.write("<br>總和 : ", sum);
+</script>
+<!-- -->
+
+<h2>for()的let------1</h2>
+<script>
+	let ii = 1000;
+	for(let ii=1;ii<10;ii++){
+		document.write(ii);
+	}
+	document.write("<br>");
+	document.write("ii =",ii,"<br>");
+</script>
+
+
+<h2>for(){}的let------2</h2>
+<script>
+	let total = 0;
+	for(let j=1;j<10;j++){
+		let j = 1000;
+		total += j;
+	}
+	document.write("total =",total,"<br>");
+</script>
+</body>
+</html>

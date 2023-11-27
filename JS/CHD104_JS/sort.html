@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<style>
+	h2{color:deeppink;}
+</style>
+</head>
+<body>
+<h2>使用sort()</h2>
+<script>
+var arr = [ 40, 20, 50, 70, 30, 80, 7];
+arr.sort();
+document.write( arr, "<br>");	
+</script>    
+
+<h2>自己排</h2>
+<script>
+var arr = [ 40, 20, 50, 70, 30, 80, 7];
+for(let i=0;i<arr.length-1;i++){
+	for(let j=i+1;j<arr.length;j++){
+		if(arr[i]>arr[j]){
+			let temp;
+			temp = arr[i];
+			arr[i]=arr[j];
+			arr[j]=temp;
+		}
+	}
+}
+document.write( arr, "<br>");
+</script>
+
+
+<h2>使用sort() 搭配compare function----小到大</h2>
+<script>
+var arr = [ 40, 20, 50, 70, 30, 80, 7];
+function compareAsc(a,b){
+	return a-b;
+}
+arr.sort(compareAsc);
+document.write( arr, "<br>");	
+</script>  
+
+<h2>使用sort() 搭配compare function----大到小</h2>
+<script>
+var arr = [ 40, 20, 50, 70, 30, 80, 7];
+function compareAsc(a,b){
+	return b-a;
+}
+arr.sort(compareAsc);
+document.write( arr, "<br>");	
+</script>  
+
+<h2>奇數偶數</h2>
+<script>
+var arr = [];
+var num = 10;
+for(i=0;i<num;i++){
+	do{
+        arr[i]=parseInt(Math.random()*49)+1;
+    	}while(arr.indexOf(arr[i])!=i)
+}
+function oddEven(a,b){
+	return b%2-a%2;
+}
+function compareAsc(a,b){
+	return a-b;
+}
+arr.sort(compareAsc);
+arr.sort(oddEven);
+document.write( arr, "<br>");	
+</script>
+
+
+<h2>字串比大小</h2>
+<script>
+	var sentences =[
+    "No cross,no crown.",
+    "Sometime ever, sometime never.",
+    "You don’t have time to be timid.",
+    "Treat yourself well.",
+    "No fear of words, no fear of years.",
+    "Don’t let the past steal your present.",
+    "Be cheerful and hopeful."
+    ];
+	sentences.sort();
+	for(let i in sentences){
+		document.write(sentences[i],"<br>");
+	}
+	
+</script>
+
+<h2>字串比大小</h2>
+<script>
+	var sentences =[
+    "No cross,no crown.",
+    "Sometime ever, sometime never.",
+    "You don’t have time to be timid.",
+    "Treat yourself well.",
+    "No fear of words, no fear of years.",
+    "Don’t let the past steal your present.",
+    "Be cheerful and hopeful."
+    ];
+	function num(a,b){
+		return a.length-b.length;
+	}
+	sentences.sort(num);
+	for(let data of sentences){
+		document.write(data,"<br>");
+	}
+</script>
+
+</body>
+</html>

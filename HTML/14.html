@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 600px;
+            height: 600px; 
+            display: flex; 
+            border: 2px red solid;
+            flex-wrap: wrap;
+            /* gap: 10px 15px; */
+            
+        }
+        .item{
+            /* flex-basis: 100px;在主軸上的長度 */
+            width: 1500px;
+            height: 150px;
+            background-color: orange;
+            font-size: 50px;
+            margin: 2px;
+            flex-shrink: 0;  
+        }
+        /*.item:nth-child(2){
+            
+            align-self: flex-end;
+        } margin-top: auto; 絕對方向 不會因為交叉軸而有所改變*/
+        /* .item:nth-child(3){
+            order: 1;
+        }小排到大 預設是0 */
+        .item:nth-child(3){
+            flex: 1 1 0;   /*flex grow(1填滿剩餘空間) shrink(0可以超出去) basis(在主軸的長度) */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

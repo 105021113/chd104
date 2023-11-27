@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cardGroup{
+            display: flex;
+            gap: 20px;
+        }
+        .card{
+            width: 0px;
+            border: 1px red solid;
+            flex-grow: 1;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
+        .card img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .date{
+            order: -1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardGroup">
+        <div class="card">
+            <div class="picture">
+                <img src="https://fakeimg.pl/300x200/200">
+            </div>
+            <div class="text">
+                <h3>title</h3>
+                <span class="date">2023.11.11</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eaque sit voluptatibus, odit ipsum consectetur molestias perferendis, natus voluptas et a debitis id animi accusantium vitae rem maxime fuga? Rerum.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+              <img src="https://fakeimg.pl/300x200/200">
+            </div>
+            <div class="text">
+                <h3>title</h3>
+                <span class="date">2023.11.11</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eaque sit voluptatibus, odit ipsum consectetur molestias perferendis, natus voluptas et a debitis id animi accusantium vitae rem maxime fuga? Rerum.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img src="https://fakeimg.pl/300x200/200">
+            </div>
+            <div class="text">
+                <h3>title</h3>
+                <span class="date">2023.11.11</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eaque sit voluptatibus, odit ipsum consectetur molestias perferendis, natus voluptas et a debitis id animi accusantium vitae rem maxime fuga? Rerum.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

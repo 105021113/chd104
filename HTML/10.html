@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.box span{
+            color: red;
+        }
+        div:not(.box){
+            color: orange;
+        }
+        /* div:nth-of-type(2){
+            color: aqua;
+        }
+        div.box+div{
+            color: blue;
+        }
+        div.box~div{
+            color: brown;
+        } */
+    </style>
+</head>
+<!-- p:first-child>.box -->
+<body>
+    <div class="box OO">
+        Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Perspiciatis fuga dicta repudiandae illum quia reiciendis autem molestias deleniti nostrum quisquam!
+    </div>
+    <div>
+        Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Perspiciatis fuga dicta repudiandae illum quia reiciendis autem molestias deleniti nostrum quisquam!
+    </div>
+    <p class="box XX">
+        Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Perspiciatis fuga dicta repudiandae illum quia reiciendis autem molestias deleniti nostrum quisquam!
+    </p>
+    <p>
+        Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Perspiciatis fuga dicta repudiandae illum quia reiciendis autem molestias deleniti nostrum quisquam!
+    </p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    身&emsp;高:<input type="number" id="height" >cm <br>
+    體&emsp;重:<input type="number" id="weight" >kg <br>
+    <input type="button" id="btnSubmit" value="計算"><br>
+    <span id="result"></span>
+    <script>
+        function calculatebmi(){
+            let res;
+            h = document.getElementById("height").value/100;
+            w = document.getElementById("weight").value;
+            if(w/(h*h)<18.5){
+                res = document.getElementById("result");
+                res.innerHTML = `BMI: ${w/(h*h)}<br>體重過輕`;
+            }
+            else if(w/(h*h)<24){
+                res = document.getElementById("result");
+                res.innerHTML = `BMI: ${w/(h*h)}<br>正常範圍`;
+            }
+            else if(w/(h*h)<27){
+                res = document.getElementById("result");
+                res.innerHTML = `BMI: ${w/(h*h)}<br>過重`;
+            }
+            else if(w/(h*h)<30){
+                res = document.getElementById("result");
+                res.innerHTML = `BMI: ${w/(h*h)}<br>輕度肥胖`;
+            }
+            else if(w/(h*h)<35){
+                res = document.getElementById("result");
+                res.innerHTML = `BMI: ${w/(h*h)}<br>中度肥胖`;
+            }
+            else{
+                res = document.getElementById("result");
+                res.innerHTML = `BMI: ${w/(h*h)}<br>重度肥胖`;
+            }
+        }
+
+        document.getElementById("btnSubmit").addEventListener("click", calculatebmi, false);
+    </script>
+</body>
+</html>

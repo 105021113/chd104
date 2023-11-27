@@ -1,0 +1,4 @@
+ctrl+shift+p wrap 包在標籤  *=每一行都+
+ctrl+d 多選一次改
+div>p div包div
+div+div 兩個div

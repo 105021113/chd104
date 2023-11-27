@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 1px solid black;
+            padding: 6px;
+            margin: 50px;
+            position: relative;
+        }
+        .card .label{
+            background-color: orange;
+            padding: 4px 6px;
+            position: absolute;
+            top: 20px;
+            left: -9px;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card .label::after{
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 8px solid black;
+            border-left: 8px solid white;
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
+        .card .sales{
+            width: 40px;
+            height: 60px;
+            background-color: orange;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: center;
+        }
+        .card .sales::after{
+            content: '';
+            border-left: orange 20px solid;
+            border-right: orange 20px solid;
+            border-bottom: #0000 20px solid;
+            position: absolute;
+            top: 100%;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="pic">
+            <img src="https://picsum.photos/300/200/?random=10">
+        </div>
+        <div class="label">
+            店到店
+        </div>
+        <div class="sales">
+            8.7折
+        </div>
+        <div class="text">
+            <h3>title</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore aspernatur hic earum rerum cum, corporis consequatur beatae quas voluptatum? Harum enim, sed amet magnam ea est numquam impedit nesciunt!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

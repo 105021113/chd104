@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var price;
+        var quantity = 111;
+        var level = "3";
+        var money;
+
+        switch(level){
+            case "1":
+                if(quantity>100){
+                    price = 20;
+                }
+                else if(quantity>40){
+                    price = 25;
+                }
+                else{
+                    price = 30;
+                }
+                money = price*quantity;
+        }
+        switch(level){
+            case "2":
+                if(quantity>100){
+                    price = 15;
+                }
+                else if(quantity>40){
+                    price = 20;
+                }
+                else{
+                    price = 25;
+                }
+                money = price*quantity;
+        }
+        switch(level){
+            case "3":
+                if(quantity>100){
+                    price = 10;
+                }
+                else if(quantity>40){
+                    price = 15;
+                }
+                else{
+                    price = 20;
+                }
+                money = price*quantity;
+        }
+        document.write("等級: ",level,"<br>","共買了: ", quantity," 斤<br>","橘子一斤: ", price, " 元<br>",  "總共: ",money, "元");
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    border-bottom: 1px gray solid;
+}
+.headerIndex{
+    padding: 20px;
+}
+
+.headerRight{
+    display: flex;
+    padding-left: 600px;
+}
+.headerRightindex{
+    padding: 20px;
+    
+}
+.header img{
+    height: 40px;
+    width: 130px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.h1{
+    color: #09adbf;
+}
+.h1 span{
+    background-color: #09adbf;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.cardlist{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    padding: 2px;
+    margin: 10px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.card h1{
+    font-size: 14px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+}
+
+.course{
+    text-align: center;
+}
+.course header{
+    font-size: 30px;
+    padding: 20px;
+}
+.con{
+    margin: 20px;
+}
+.con span{
+color: blue;
+font-size: 30px;
+}
+.course{
+    padding-top: 50px;
+}
+.newCourse{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 16spx;
+}
+.newCourse header{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.category{
+    display: flex;
+    justify-content: center;
+}
+.categoryIndex{
+    width: 152px;
+    height: 25px;
+    border: solid 1px gray;
+    margin: 30px;
+    text-align: center;
+}
+.article table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+}
+table caption{
+    font-size: 30px;
+}

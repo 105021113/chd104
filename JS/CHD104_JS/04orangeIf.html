@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var price = 100;
+        var quantity = 6;
+        var money;
+        if(quantity*price>500){
+            money=price*quantity*0.9;
+        }
+        else{
+            money=price*quantity;
+        }
+        document.write("橘子一斤: ", price, " 元<br>", "共買了: ", quantity," 斤<br>", "總共: ",money, "元");
+    </script>
+</body>
+</html>

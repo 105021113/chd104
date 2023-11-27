@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #feature{
+            width: 100%;
+            height: 840px;
+            background: url('/img/bgall.png'), rgba(200, 255, 130, 0.3);
+            margin-bottom: 20px;
+        }
+        #feature2{
+            width: 100%;
+            height: 840px;
+            background: url('/img/blu-stripes.png'), url('/img/brown.png') no-repeat left bottom, url('/img/white.png') no-repeat right top, rgba(200, 255, 130, 0.3);
+        }
+        .pic{
+            width: 200px;
+            height: 200px;
+            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        .box{
+            width: 200px;
+            height: 20px;
+            background-image: linear-gradient(to right, #d16ba5, #eb7783, #ec9068, #daad5f, #bbc972, #b2d67d, #a6e38d, #97ef9f, #a9f490, #bdf780, #d5fa6f, #eefb5f);
+        }
+    </style>
+</head>
+<body>
+    <section id="feature"></section>
+    <section id="feature2"></section>
+    <img class="pic" src="/img/sara-ciungan-BPbFXkiDNYU-unsplash.jpg" alt="">
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var time = 34782;
+        var hour, min, sec;
+        sec = time%60;
+        min = ~~(time/60)%60;
+        hour = ~~(time/3600);
+        document.write('今天已經過了', time, '秒', '<br>');
+        document.write('今天已經過了', hour, '小時', min, '分', sec, '秒');
+
+    </script>
+</body>
+</html>

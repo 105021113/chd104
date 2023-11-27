@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="HTML,CSS,Javascript">
+<title>Examples</title>
+<style>
+	h2 {
+		color:deeppink;
+	}
+</style>
+</head>
+
+<body>
+<h2>建立2維陣列</h2>
+<script>
+var arr = new Array( [1,2,3,4], [11,12,13,14], [11,12,13,14]);
+
+for(var i=0; i<arr.length; i++){
+	document.write( arr[i], "<br>"); //arr[0] , arr[1] , arr[2]
+}
+// console.log(arr);
+</script>
+
+
+<h2>將2維陣列輸出到table中</h2>
+<script>
+var arr = [[1,2,3,4], [11,12,13,14], [11,12,13,14]];
+document.write("<table border = '1' cellspacing='0'>");
+for(let i=0;i<arr.length;i++){
+	document.write("<tr>");
+	for(let j=0;j<arr[i].length;j++){
+		document.write(`<td>${arr[i][j]}</td>`);
+	}
+	document.write("</td>");
+}
+document.write("</table>");
+</script>
+<!--  -->
+<h2>將2維陣列輸出到table中---------2</h2>
+<script>
+var arr = [[1,2,3,4], [11,12,13,14], [11,12,13,14]];
+var str = "<table border = '1' cellspacing='0'>";
+for(let i=0;i<arr.length;i++){
+	str += "<tr>";
+	for(let j=0;j<arr[i].length;j++){
+		str += `<td>${arr[i][j]}</td>`;
+	}
+	str += "</td>";
+}
+str += "</table>";
+document.write(str);
+
+</script>
+<h2>將2維陣列輸出到table中---------2</h2>
+<script>
+var arr = [[1,2,3,4], [11,12,13,14], [11,12,13,14]];
+var str = "<table border = '1' cellspacing='0'>";
+for(let i=0;i<arr.length;i++){
+	str += "<tr>";
+	let j = 0;
+	while(j<arr[i].length){
+		str += `<td>${arr[i][j]}</td>`;
+		j++;
+	}
+	str += "</td>";
+}
+str += "</table>";
+document.write(str);
+</script>
+</body>
+</html>

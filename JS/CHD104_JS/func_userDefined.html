@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="HTML,CSS,Javascript">
+<title>Examples</title>
+<style>
+	h2 {
+		color:deeppink;
+	}
+</style>
+</head>
+
+<body>
+<h2>没有參數也没有傳回值</h2>
+<script>
+	function sayHello(){
+		document.write("Hello World!");
+		return;
+	}
+	sayHello();
+</script>
+
+
+<h2>有參數, 没有傳回值</h2>
+<script>
+	function sayHelloToSomeone(name){
+		document.write(`Hello, ${name}~<br>`);
+	}
+	sayHelloToSomeone('Sarah');
+</script>
+
+
+<h2>有參數, 有傳回值</h2>
+<script>
+	function sum(a,b){
+		let total = 0;
+		total = a + b;
+		return total;
+	}
+	document.write("10 + 20 = ", sum(10,20));
+
+</script>
+
+<h2>arguments</h2>
+<script>
+function sum(){  
+	var total = 0;  
+	//改寫下段程式
+	for(let i=0;i<arguments.length;i++){
+		total += arguments[i];
+	}
+
+	return total;
+}	
+
+document.write("10 + 20 =", sum( 10, 20), "<br>"); 
+document.write("10 + 20 + 30 =", sum( 10, 20, 30), "<br>");
+</script>
+ 
+
+<h2>參數給預設值------ES6之後</h2>
+<script>
+function showMsg(message = "Hello~"){  
+	document.write( message, "<br>");
+}
+
+showMsg("禱告~");
+showMsg();
+</script>
+
+<h2>參數給預設值------ES6之前</h2>
+<script>
+function showMsg(message){  
+	message = message || "hello!";
+	document.write( message, "<br>");
+}
+
+showMsg("禱告~");
+showMsg();
+showMsg(0);
+showMsg("undefined");
+//缺點 showMsg(0)會出問題 不會印出0會印出hello 解決方法如下
+</script>
+
+<h2>參數給預設值------ES6之前</h2>
+<script>
+function showMsg(message){  
+	message = message === undefined ? "hello" : message;
+	document.write( message, "<br>");
+}
+
+showMsg("禱告~");
+showMsg();
+showMsg(0);
+showMsg(undefined);
+//缺點 若showMsg(undefined) 會出問題
+</script>
+
+</script>
+
+<h2>參數給預設值------ES6之前</h2>
+<script>
+function showMsg(message){  
+	message = arguments.length === 0 ? "hello" : message;
+	document.write( message, "<br>");
+}
+
+showMsg("禱告~");
+showMsg();
+showMsg(0);
+showMsg("undefined");
+</script>
+
+<h2>避免和全域方法同名</h2>
+<script>
+function alert(message){
+	document.write(message);
+}	
+window.alert("test...........1");
+
+alert("test...........2");		
+</script>
+
+<h2>rest parameter</h2> 
+<script>
+function sumMany(...arr){
+	let sum = 0;
+	for(i=0;i<arr.length;i++){
+		sum += arr[i];
+	}
+	return sum;
+}
+
+document.write("sumMany(11,22,33) : ", sumMany(11,22,33), "<br>");
+document.write("sumMany(10,20,30,40,50) : ", sumMany(10,20,30,40,50), "<br>");
+</script>
+ <!---->
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        var money = 0;
+        var i = 1
+        do{
+            money = parseInt(Math.random()*11)*100;
+            sum+=money;
+            document.write("第", i,"次獎金為 :", money, "元<br>");
+            i++;
+        }while(money>0)
+        document.write("總共抽了 : ", i-1, "次<br>", "總獎金為 : ", sum, "元");
+    </script>
+</body>
+</html>

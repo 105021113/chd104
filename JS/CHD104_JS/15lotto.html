@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var num = 6;
+        var arr=[];
+        for(let i=0;i<num;i++){
+            arr[i]=parseInt(Math.random()*49)+1;
+            if(arr.indexOf(arr[i])!=i){
+                i--;
+            }
+        }
+        document.write(arr);
+    </script> -->
+    <script>
+        var num = 6;
+        var arr = [];
+        for(let i=0;i<num;i++){
+            do{
+                arr[i]=parseInt(Math.random()*49)+1;
+            }while(arr.indexOf(arr[i])!=i)
+        }
+        document.write(arr);
+    </script>
+</body>
+</html>

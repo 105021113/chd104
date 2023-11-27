@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color:deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h2>01temperature.html</h2>
+    <script>
+        var Fah;
+        var Cen = 30;
+        Fah = Cen*9/5+32;
+
+        document.write('今天攝氏溫度是 : ', Cen, '°C', '<br>');
+        document.write('今天華氏溫度是 : ', Fah, '°F');
+    </script>
+
+    <h2>02expressint.html</h2>
+    <script>
+        var time = 34782;
+        var hour, min, sec;
+        sec = time%60;
+        min = ~~(time/60)%60;
+        hour = ~~(time/3600);
+        document.write('今天已經過了', time, '秒', '<br>');
+        document.write('今天已經過了', hour, '小時', min, '分', sec, '秒');
+    </script>
+    
+    <h2>04orangeIf.html</h2>
+    <script>
+        var price = 100;
+        var quantity = 6;
+        var money;
+        if(quantity*price>500){
+            money=price*quantity*0.9;
+        }
+        else{
+            money=price*quantity;
+        }
+        document.write("橘子一斤: ", price, " 元<br>", "共買了: ", quantity," 斤<br>", "總共: ",money, "元");
+    </script>
+
+    <h2>05orangeIf_2.html</h2>
+    <script>
+        var price = 100;
+        var quantity = 11;
+        var money;
+        if(quantity*price>1000){
+            money=price*quantity*0.7;
+        }
+        else if(quantity*price>500){
+            money=price*quantity*0.9;
+        }
+        else{
+            money=price*quantity;
+        }
+        document.write("橘子一斤: ", price, " 元<br>", "共買了: ", quantity," 斤<br>", "總共: ",money, "元");
+    </script>
+
+    <h2>06orangeIf_3.html</h2>
+    <script>
+        var price;
+        var quantity = 111;
+        var level = "3";
+        var money;
+
+        switch(level){
+            case "1":
+                if(quantity>100){
+                    price = 20;
+                }
+                else if(quantity>40){
+                    price = 25;
+                }
+                else{
+                    price = 30;
+                }
+                money = price*quantity;
+        }
+        switch(level){
+            case "2":
+                if(quantity>100){
+                    price = 15;
+                }
+                else if(quantity>40){
+                    price = 20;
+                }
+                else{
+                    price = 25;
+                }
+                money = price*quantity;
+        }
+        switch(level){
+            case "3":
+                if(quantity>100){
+                    price = 10;
+                }
+                else if(quantity>40){
+                    price = 15;
+                }
+                else{
+                    price = 20;
+                }
+                money = price*quantity;
+        }
+        document.write("等級: ",level,"<br>","共買了: ", quantity," 斤<br>","橘子一斤: ", price, " 元<br>",  "總共: ",money, "元");
+    </script>
+
+    <h2>07forSum.html</h2>
+    <script>
+        var num = 100; 
+        var odd = 0 
+        var even = 0;
+        for(let i=1;i<=num;i++){
+            if(i%2==0){
+                even+=i;
+            }
+            else{
+                odd+=i;
+            }
+        }
+        document.write("1~", num, "<br>","奇數和為: ", odd, "<br>", "偶數和為: ", even, "<br>", "總和為: ", odd+even, "<br>")
+    </script>
+
+    <h2>08prizeFor.html</h2>
+    <script>
+        var sum = 0;
+        var money = 0;
+        for(let i=1;i<=10;i++){
+            money = parseInt(Math.random()*11)*100;
+            document.write("第",i,"次為 : ",money, "<br>");
+            sum+=money;
+        }
+        document.write("總獎金為 : ", sum, "元");
+    </script>
+
+    <h2>9prize.html</h2>
+    <script>
+        var sum = 0;
+        var money = 0;
+        var i = 1
+        do{
+            money = parseInt(Math.random()*11)*100;
+            sum+=money;
+            document.write("第", i,"次獎金為 :", money, "元<br>");
+            i++;
+        }while(money>0)
+        document.write("總共抽了 : ", i-1, "次<br>", "總獎金為 : ", sum, "元");
+    </script>
+
+    <h2>10nestedLoopStar.html</h2>
+    <script>
+        var num = 6;
+        for(let i=1;i<=num;i++){
+            for(let j=1;j<=i;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+
+    <h2>11nestedLoopStar.html</h2>
+    <script>
+        var num = 6;
+        for(let i=1;i<num*2;i++){
+            for(let j=1;j<=i&&i+j<=num*2;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+
+    <h2>12nestedLoop. html</h2>
+    <script>
+        var num = 6;
+        for(let i=1;i<=num;i++){
+            for(let j=1;j<=i;j++){
+                document.write(j);
+            }
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+</html>

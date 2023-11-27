@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = 0;
+        var max = 0, min = 100;
+        var arr = [];
+        for(let i=0;i<10;i++){
+            arr[i]=parseInt(Math.random()*100)+1;
+            document.write(arr[i], " ");
+            sum += arr[i];
+            while(arr[i]>max){
+                max = arr[i];
+            }
+            while(arr[i]<min){
+                min = arr[i];
+            }
+        }
+        document.write("<br>總和 : ", sum, "<br>");
+        document.write("最大值 : ", max, "<br>");
+        document.write("最小值 : ", min, "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            color: red;
+        }
+        div.box {
+            color: black;
+        } */
+
+        /* div:not(.box){
+            color: red;
+        } */
+        /* div:nth-of-type(2){
+            background-color: #fa0;
+        } */
+        /* div.box + div{
+            background-color: #FA0;
+        } */
+        div.box ~ div{
+            background-color: #FA0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Repudiandae doloribus excepturi odit tempore numquam mollitia quod saepe, quos
+    </div>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, maxime.
+    </div>
+    <p class="box">
+        <span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Repudiandae doloribus excepturi odit tempore numquam mollitia quod saepe, quos obcaecati, nostrum ipsum, commodi qui enim necessitatibus provident corrupti consequuntur ipsam vitae?
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, magni?</p>
+
+
+    
+</body>
+</html>
